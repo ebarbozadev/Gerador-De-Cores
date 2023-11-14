@@ -40,12 +40,9 @@ h1 {
 h2 {
     color: var(--branco);
     font-size: 3rem;
+    width: 40%;
 
-    margin-right: 10px;
-}
-
-span {
-    color: var(--escuro);
+    margin-right: 0px;
 }
 
 /* Header */
@@ -111,10 +108,73 @@ main {
     border-radius: 10px;
 }
 
-.caixa-divisao span {
-    width: 200px;
-    margin-left: 10px;
+.caixa-divisao p {
+    width: 40%;
+    margin-left: 0px;
 
-    color: var(--claro);
+    font-weight: bold;
+    color: var(--escuro);
     font-size: 3rem;
+}
+
+/* Responsivo */
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    .caixa button {
+        font-size: 2;
+    }
+    
+    .caixa-divisao p {
+        font-size: 2rem;
+    }
+
+    .caixa-divisao {
+        width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 425px) {
+    h1 {
+        display: none;
+    }
+
+    .container-header {
+        justify-content: center;
+    }
+
+    h2, p, button {
+        font-size: 1.8rem;
+    }
+
+    .caixa-divisao p {
+        font-size: 1.8rem;
+    }
+
+    .caixa-divisao {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .caixa-divisao {
+        width: 350px;
+    }
+}
+
+@media (max-width: 375px) {
+    .caixa-divisao {
+        width: 200px;
+    }
+
+    h2, p, button {
+        font-size: 1rem;
+    }
+
+    .caixa-divisao p {
+        font-size: 1rem;
+    }
 }
