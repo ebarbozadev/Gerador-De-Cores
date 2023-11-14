@@ -1,0 +1,120 @@
+/* Geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --branco : #eeeeee;
+    --escuro : #181818;
+    --claro  : #444444;
+}
+
+ul {
+    list-style: none;
+    
+    display: flex;
+    align-items: center;
+}
+
+a i {
+    margin-right: 10px;
+}
+
+a {
+    color: var(--branco);
+    text-decoration: none;
+
+    padding: 4px 8px;
+}
+
+h1 {
+    color: var(--branco);
+    font-size: 1.3rem;
+}
+
+h2 {
+    color: var(--branco);
+    font-size: 3rem;
+
+    margin-right: 10px;
+}
+
+span {
+    color: var(--escuro);
+}
+
+/* Header */
+
+.container-header {
+    height: 3vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+
+    background-color: var(--escuro);
+}
+
+.container-header h1 {
+    padding-left: 10px;
+}
+
+.container-header nav ul li:first-child {
+    margin-right: 16px;
+}
+
+.container-header nav ul li a:hover {
+    border-bottom: 4px solid var(--branco);
+}
+
+/* Main */
+
+main {
+    height: 97vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container{
+    width: 600px;
+    height: 145px;
+
+    text-align: center;
+}
+
+.caixa button {
+    margin-top: 50px;
+    padding: 10px 15px;
+
+    color: var(--branco);
+    cursor: pointer;
+    border: 2px solid var(--escuro);
+    border-radius: 4px;
+    background-color: var(--escuro);
+}
+
+.caixa-divisao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 0;
+    background-color: var(--escuro);
+    border-radius: 10px;
+}
+
+.caixa-divisao span {
+    width: 200px;
+    margin-left: 10px;
+
+    color: var(--claro);
+    font-size: 3rem;
+}
